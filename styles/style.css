@@ -1,19 +1,11 @@
  @font-face {
-     font-family: "RobotoSerif";
-     src: url(fonts\RobotoSerif-Italic-VariableFont_GRAD,opsz,wdth,wghttf);
-     src: url(fonts\RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf);
-
+     font-family: "IBMPIexSerif";
+     src: url(../fonts/IBMPlexSerif-Regular.ttf)format("opentype");
  }
 
  body {
-     font-family: "RobotoSerif";
-     font-optical-sizing: auto;
-     font-weight: 200;
-     font-style: normal;
-     font-variation-settings:
-         "wdth" 100,
-         "GRAD" 10;
-
+     font-family: "IBMPIexSerif";
+     font-style: italic;
  }
 
  * {
@@ -23,11 +15,12 @@
      list-style: none;
      border-radius: 5px;
      border: none;
-
  }
 
-
-
+ .header,
+ #footer {
+     border-radius: 0;
+ }
 
  .degree,
  .text,
@@ -42,13 +35,13 @@
 
  .header {
      border-bottom: 1px solid silver;
+     box-shadow: 1px 3px 5px silver;
      display: flex;
      width: 100%;
      height: auto;
      align-items: center;
      justify-content: space-between;
      padding: 30px 30px;
-
  }
 
  .menu,
@@ -56,14 +49,11 @@
      position: relative;
      top: 15px;
      padding: 5px;
-
-
  }
 
  .login_menu_button {
      border: none;
      text-shadow: 1px 3px 3px white;
-
  }
 
  .button_sign_up,
@@ -71,7 +61,11 @@
      background-color: rgb(8, 125, 118);
      color: white;
      text-shadow: 1px 3px 5px black;
+ }
 
+ .input_button_design:active {
+     background-color: rgb(14, 178, 38);
+     transform: translateY(2px);
  }
 
  .login_menu_button.button_sign_up {
@@ -87,7 +81,6 @@
 
  .menu,
  .list_nav {
-
      text-underline-offset: 10px;
      display: flex;
      font-size: large;
@@ -105,7 +98,6 @@
 
  .list_nav>li>a {
      text-decoration-color: rgb(8, 125, 118);
-
  }
 
  .login_menu_button {
@@ -119,11 +111,11 @@
  }
 
  h1 {
-
      margin: 50px 0;
      display: flex;
      align-items: center;
      justify-content: center;
+     text-shadow: 1px 3px 3px rgb(201, 200, 200);
 
  }
 
@@ -131,7 +123,6 @@
      position: relative;
      top: -10px;
      margin-right: 10px;
-
  }
 
  .container {
@@ -148,13 +139,15 @@
  .text {
      bottom: -30px;
      width: 700px;
-     height: 85px;
+     height: auto;
      text-align: center;
-     padding: 10px 30px;
-     background-color: silver;
+     padding: 15px 30px;
+     background-color: rgb(199, 198, 198);
      position: relative;
      font-size: larger;
-     text-shadow: 1px 3px 5px white;
+     font-weight: 500;
+     text-shadow: 2px 2px 5px rgb(146, 146, 146);
+     z-index: 1;
  }
 
  .degree {
@@ -185,7 +178,6 @@
      color: white;
      text-shadow: 1px 3px 5px black;
      font-size: large;
-     z-index: -1;
  }
 
  .text_in_form,
@@ -256,7 +248,6 @@
 
  .for_doctors {
      left: 20%;
-     z-index: -1;
  }
 
  .degree_doctors {
@@ -267,6 +258,7 @@
      width: 100%;
      height: auto;
      border-top: 1px solid silver;
+     box-shadow: -1px -3px 5px silver;
      padding: 30px 30px;
  }
 
@@ -292,4 +284,9 @@
      height: 40px;
      border: 1px solid red;
      cursor: pointer;
+ }
+
+ input:focus {
+     outline: none;
+     width: 200px;
  }
