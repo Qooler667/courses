@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css\reset.css">
+    <link rel="stylesheet" href="styles\reset.css">
     <link rel="stylesheet" href="styles\style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wdth,wght,GRAD@0,8..144,50..150,100..900,-50..100;1,8..144,50..150,100..900,-50..100&display=swap');
+    </style>
     <title>Form-registration</title>
 </head>
 
@@ -28,7 +31,7 @@
         </div>
     </header>
     <h1>
-        <img class="title_img" src="images\solution_2752481 (2).png" alt="#"> Поможем найти решение
+        <img class="title_img" src="images\img-for-title.png" alt="#"> Поможем найти решение
     </h1>
     <div class="container">
         <section class="for_applicants">
@@ -38,17 +41,17 @@
                     что бы совершить правильный выбор учебного заведения.</p>
             </div>
             <div class="degree">applicants</div>
-            <div class="form_registration">
+            <div class="section_container">
                 <div class="text_in_form">
                     <p>Записывайтесь чтобы подготовится к поступлению в медицинские ВУЗы</p>
                 </div>
                 <div class="img_in_form"><img src="images\img-first-section.jpg" alt="девочка с учебником"></div>
-                <div class="form_for_applicants form">
-                    <input type="text" placeholder="your name">
-                    <input type="tel" placeholder="+7(___)___-__-__">
-                    <input type="email" placeholder="your@email">
+                <form class="form_for_applicants form" action="#" method="get" enctype="multipart/form-data">
+                    <input type="text" placeholder="your name" required>
+                    <input type="tel" placeholder="+7(___)___-__-__" required>
+                    <input type="email" placeholder="your@email" required>
                     <input class="input_button_design" id="button" type="button" value="I want a consultation">
-                </div>
+                </form>
             </div>
         </section>
         <section class="for_students">
@@ -58,37 +61,37 @@
                     профессии.</p>
             </div>
             <div class="degree degree_students">students</div>
-            <div class="form_registration form_students">
+            <div class="section_container for_students">
                 <div class="text_in_form second_text_in_form">
                     <p>Записывайтесь, чтобы найти ординатуру или получить консультацию по интересующей Вас тематике.</p>
                 </div>
                 <div class="img_in_form"><img src="images\images-second-section.jpg" alt="photo with students"></div>
-                <div class="form_for_students form">
-                    <input type="text" placeholder="your name">
-                    <input type="tel" placeholder="+7(___)___-__-__">
-                    <input type="email" placeholder="your@email">
+                <form class="form_for_students form" action="#" method="get" enctype="multipart/form-data">
+                    <input type="text" placeholder="your name" required>
+                    <input type="tel" placeholder="+7(___)___-__-__" required>
+                    <input type="email" placeholder="your@email" required>
                     <input class="input_button_design" id="button" type="button" value="I want a consultation">
-                </div>
+                </form>
             </div>
         </section>
-        <section class="for_applicants">
+        <section class="for_doctors">
             <div class="text third_text">
                 <p>Платформа позволяет медикам со всей страны обсудить с врачами лучших лечебных учреждений различные
                     профессиональные и карьерные вопросы тет-а-тет.</p>
             </div>
             <div class="degree degree_doctors">Doctors</div>
-            <div class="form_registration form_doctors">
+            <div class="section_container for_doctors">
                 <div class="text_in_form third_text_in_form">
                     <p>Записывайтес, чтобы поделится знаниями в области медицины или найти решение нетепичного случая
                         лечения среди коллег.</p>
                 </div>
                 <div class="img_in_form"><img src="images\images-third-section .jpg" alt="photo with doctors"></div>
-                <div class="form_for_doctors form">
-                    <input type="text" placeholder="your name">
-                    <input type="tel" placeholder="+7(___)___-__-__">
-                    <input type="email" placeholder="your@email">
+                <form class="form_for_doctors form" action="#" method="get" enctype="multipart/form-data">
+                    <input type="text" placeholder="your name" required>
+                    <input type="tel" placeholder="+7(___)___-__-__" required>
+                    <input type="email" placeholder="your@email" required>
                     <input class="input_button_design" id="button" type="button" value="I want a consultation">
-                </div>
+                </form>
             </div>
         </section>
     </div>
